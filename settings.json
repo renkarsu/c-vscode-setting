@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "kfcomp2013.h": "c",
+        "mtrand.h": "c",
+        "stdlib.h": "c",
+        "climits": "c",
+        "cmath": "c",
+        "compare": "c",
+        "concepts": "c",
+        "cstdarg": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "exception": "c",
+        "type_traits": "c",
+        "limits": "c",
+        "new": "c",
+        "*.tcc": "c",
+        "cinttypes": "c",
+        "cstdint": "c",
+        "typeinfo": "c"
+    }
+}
