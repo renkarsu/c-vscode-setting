@@ -13,7 +13,12 @@
 				"${fileDirname}\\mtrand.c",
 				"${fileDirname}\\kfcomp2013.c",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-O2",
+				"-Wall",
+				"-Wextra",
+				"-march=native",
+				"-pedantic-errors",
 			],
 			"options": {
 				"cwd": "C:\\msys64\\mingw64\\bin"
