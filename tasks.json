@@ -19,6 +19,7 @@
 				"-Wextra",
 				//"-mtune=native",
 				//"-mfpmath=both",
+				// if -march=native is working, __BIGGEST_ALIGNMENT__ == 16 is changed to 32
 				"-march=native",
 				"-pedantic-errors",
 			],
