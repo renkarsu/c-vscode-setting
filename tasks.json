@@ -7,6 +7,9 @@
 			"type": "shell",
 			"label": "gcc.exe build active file",
 			"command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+                        /*
+                        gcc ofdm-dtc8psk.c mtrand.c kfcomp2013.c -0 ofdm-dtc8psk-compile.out -O2 -lm -Wall -Wextra -march=native -pedantic-errors
+                        */
 			"args": [
 				"-g",
 				"${file}",
