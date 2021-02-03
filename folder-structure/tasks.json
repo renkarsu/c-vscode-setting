@@ -1,0 +1,39 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "gcc.exe build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"${workspaceFolder}\\include\\mtrand.c",
+				"${workspaceFolder}\\include\\kfcomp2013.c",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-o",
+				"${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+				"-O2",
+				"-Wall",
+				"-Wextra",
+				"-mtune=native",
+				"-mfpmath=both",
+				// if -march=native is working, __BIGGEST_ALIGNMENT__ == 16 is changed to 32
+				"-march=native",
+				"-pedantic-errors",
+				//gcc a.c mtrand.c kfcomp2013.c -o a.exe -O2 -lm -Wall -Wextra -march=native -pedantic-errors
+				
+			],
+			"options": {
+				"cwd": "C:\\msys64\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}
